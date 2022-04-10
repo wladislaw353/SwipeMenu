@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #121212;
+}
+body {
+  height: 100vh;
+}
+.swipemenu-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  visibility: hidden;
+}
+.swipemenu-wrapper .swipemenu-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgba(12, 12, 12, 0.5);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.swipemenu-wrapper .swipemenu {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.swipemenu-wrapper.disable-animation .swipemenu-overlay,
+.swipemenu-wrapper.disable-animation .swipemenu {
+  transition: none;
+}
+button,
+a {
+  margin-bottom: 15px;
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid #121212;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+button:hover,
+a:hover {
+  background: #121212;
+  color: #fff;
+}
+a {
+  text-transform: unset;
+  line-height: 41px;
+}
+.holder {
+  max-width: 888px;
+  padding: 30px 15px 130px;
+  margin: 0 auto;
+}
+.holder h1,
+.holder h2 {
+  margin: 30px 0;
+}
+.holder p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.holder p span {
+  background: #bdbdbd33;
+  border-radius: 3px;
+  padding: 3px 6px;
+  white-space: nowrap;
+}
+.holder p svg {
+  margin: 0 5px;
+}
+pre {
+  line-height: 23px;
+  background: #121212;
+  overflow-y: hidden;
+  overflow-x: auto;
+  max-height: 300px;
+  cursor: text;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+pre:hover {
+  overflow-y: auto;
+}
+pre code {
+  color: #fff;
+}
+button + p {
+  display: flex;
+  flex-wrap: wrap;
+}
