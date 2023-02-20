@@ -11,7 +11,7 @@ Use date attributes to open / close menu: [menu-opener], [menu-closer]
 
 You can rename classes in your own way.
 
-```http
+```
 <div class="swipemenu-wrapper">
     <div class="swipemenu-overlay"></div>
     <div class="swipemenu">
@@ -25,13 +25,13 @@ You can rename classes in your own way.
 
 #### You also can use CDN:
 
-```http
+```
 <script src="https://cdn.jsdelivr.net/gh/wladislaw353/SwipeMenu@2.1.0/js/SwipeMenu.min.js"></script>
 ```
 
 #### Initialization:
 
-```http
+```
 SwipeMenu()
 ```
 #### Options:
@@ -40,7 +40,7 @@ Use options if you need. Indicate the width of the menu, class names, if you cha
 Switch ```mobileOnly``` to false if the swipe should work on deskop.
 
 
-```http
+```
 SwipeMenu({
     mobileOnly: true,
     wrapper:    '.swipemenu-wrapper',
@@ -56,7 +56,7 @@ SwipeMenu({
 
 Control the transition of the menu: ```all .3s ease```, change it for classes ```.swipemenu-overlay``` and ```.swipemenu```.
 
-```http
+```
 .swipemenu-wrapper {
     position: fixed;
     top: 0;
