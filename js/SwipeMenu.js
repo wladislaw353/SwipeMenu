@@ -5,6 +5,7 @@ const SwipeMenu = (options) => {
 			wrapper:    '.swipemenu-wrapper',
 			overlay:    '.swipemenu-wrapper .swipemenu-overlay',
 			menu:       '.swipemenu-wrapper .swipemenu',
+			swipeArea:  15,
 			menuWidth:  300,
 			opener:     '[menu-opener]',
 			closer:     '[menu-closer]',
@@ -20,6 +21,7 @@ const SwipeMenu = (options) => {
 
 	// Init
 	const maxDistance  = param.menuWidth
+	const swipeArea    = param.swipeArea
 	const $menuWrapper = document.querySelector(param.wrapper)
 	const $menuOverlay = document.querySelector(param.overlay)
 	const $menu        = document.querySelector(param.menu)
@@ -58,7 +60,7 @@ const SwipeMenu = (options) => {
 
 	const touchstart = (value) => {
 		x1 = value
-		if ((savedPosition === 0 && x1 < 50) || savedPosition > 0) {
+		if ((savedPosition === 0 && x1 < swipeArea) || savedPosition > 0) {
 			action = true
 			$menuWrapper.classList.add('disable-animation')
 		}

@@ -46,6 +46,7 @@ SwipeMenu({
     wrapper:    '.swipemenu-wrapper',
     overlay:    '.swipemenu-wrapper .swipemenu-overlay',
     menu:       '.swipemenu-wrapper .swipemenu',
+    swipeArea:  15,
     menuWidth:  300,
     opener:     '[menu-opener]',
     closer:     '[menu-closer]'
